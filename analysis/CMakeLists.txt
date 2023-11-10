@@ -33,7 +33,7 @@ set(SRCS
 ./online/LisaOnlineSpectra.cxx
 ./online/AidaOnlineSpectra.cxx
 ./online/FatimaOnlineSpectra.cxx
-./online/FrsOnlineSpectra.cxx
+#./online/FrsOnlineSpectra.cxx
 ./online/TimeMachineOnline.cxx
 )
 
