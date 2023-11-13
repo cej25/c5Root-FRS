@@ -11,6 +11,7 @@ extern "C"
 }
 
 class TClonesArray;
+class FRSUnpackEventData;
 
 struct EXT_STR_h101_FRS_t;
 typedef struct EXT_STR_h101_FRS_t EXT_STR_h101_FRS;
@@ -42,9 +43,10 @@ class FrsReader : public c4Reader
         Bool_t fOnline;
 
         TClonesArray* fArray;
+
+        uint64_t wr_t;
+
         
-        std::vector<FrsUnpackMainItem>* mainArray;
-        std::vector<FrsUnpackTpatItem>* tpatArray;
         std::vector<FrsUnpackFrsItem>* frsArray;
 
     public:
