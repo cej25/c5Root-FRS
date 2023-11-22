@@ -44,11 +44,13 @@ set(SRCS
 ./base/UnpackReader.cxx
 ./base/c4Reader.cxx
 ./aida/c4AidaReader.cxx
-./aida/TAidaConfiguration.cxx
+./aida/AidaCal2Hit.cxx
+./aida/AidaUnpack2Cal.cxx
 ./frs/FrsReader.cxx
 ./germanium/GermaniumReader.cxx
 ./lisa/LisaReader.cxx
 ./bplast/bPlastReader.cxx
+./bplast/bPlastRaw2Cal.cxx
 ./beammonitor/BeamMonitorReader.cxx
 ./germanium/GermaniumRaw2Cal.cxx
 ./fatima/FatimaReader.cxx

@@ -1,6 +1,7 @@
 set(SYSTEM_INCLUDE_DIRECTORIES ${SYSTEM_INCLUDE_DIRECTORIES} ${BASE_INCLUDE_DIRECTORIES})
 
 set(INCLUDE_DIRECTORIES
+${C4ROOT_SOURCE_DIR}/c4base
 ${C4ROOT_SOURCE_DIR}/c4data
 ${C4ROOT_SOURCE_DIR}/c4data/frsData
 ${C4ROOT_SOURCE_DIR}/c4data/lisaData
@@ -24,9 +25,13 @@ frsData/FRSUnpackEventData.cxx
 lisaData/LisaData.cxx
 lisaData/LisaTraceData.cxx
 aidaData/AidaData.cxx
+aidaData/AidaCalData.cxx
+aidaData/AidaHitData.cxx
+aidaData/TAidaConfiguration.cxx
 germaniumData/GermaniumFebexData.cxx
 germaniumData/GermaniumCalData.cxx
 bplastData/bPlastTwinpeaksData.cxx
+bplastData/bPlastTwinpeaksCalData.cxx
 beammonitorData/BeamMonitorData.cxx
 fatimaData/FatimaTwinpeaksData.cxx
 fatimaData/FatimaTwinpeaksCalData.cxx

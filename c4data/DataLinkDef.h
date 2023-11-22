@@ -12,6 +12,7 @@
 #pragma link C++ class FatimaTwinpeaksCalData+;
 //#pragma link C++ class bPlastTamexData+;
 #pragma link C++ class bPlastTwinpeaksData+;
+#pragma link C++ class bPlastTwinpeaksCalData+;
 #pragma link C++ class LisaData+;
 #pragma link C++ class LisaTraceData+;
 #pragma link C++ class BeamMonitorData+;
@@ -28,5 +29,12 @@
 #pragma link C++ class std::vector<AidaUnpackFlowItem>+;
 #pragma link C++ class std::vector<AidaUnpackScalerItem>+;
 
+#pragma link C++ class AidaCalAdcItem+;
+#pragma link C++ class std::vector<AidaCalAdcItem>+;
+
+#pragma link C++ class AidaHit+;
+#pragma link C++ class std::vector<AidaHit>+;
+
+#pragma link C++ class TAidaConfiguration+;
 
 #endif
