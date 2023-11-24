@@ -1,5 +1,5 @@
-#ifndef FRSUnpackEventData_H
-#define FRSUnpackEventData_H
+#ifndef FRSMainCrateRawData_H
+#define FRSMainCrateRawData_H
 
 #include "TObject.h"
 
@@ -7,14 +7,14 @@
 const int NRCHANNEL_V1290 = 32;
 const int MAX_HITS_V1290 = 32;
 
-class FRSUnpackEventData : public TObject
+class FRSMainCrateRawData : public TObject
 {
     public:
         // Default Constructor
-        FRSUnpackEventData();
+        FRSMainCrateRawData();
 
         // Destructor
-        virtual ~FRSUnpackEventData() {};
+        virtual ~FRSMainCrateRawData() {};
 
         void Reset(){
             for (int i = 0; i<NRCHANNEL_V1290;i++){
@@ -67,7 +67,7 @@ class FRSUnpackEventData : public TObject
     
 
     public:
-        ClassDef(FRSUnpackEventData, 1);
+        ClassDef(FRSMainCrateRawData, 1);
 };
 
 #endif

@@ -7,7 +7,7 @@
 
 // c4
 #include "FrsOnlineSpectra.h"
-#include "FrsData.h"
+#include "FRSMainCrateRawData.h"
 #include "EventHeader.h"
 #include "c4Logger.h"
 
@@ -134,27 +134,6 @@ void FrsOnlineSpectra::Exec(Option_t* option)
    // Float_t a2AoQCorr = 0.0012;
    // Float_t AoQCorr; // CEJ: handle in calData or hitData !! 
  
-    // Fill hit data
-    if (fHitFrs && fHitFrs->GetEntriesFast() > 0)
-    {
-        Int_t nHits = fHitFrs->GetEntriesFast();
-        for (Int_t ihit = 0; ihit < nHits; ihit++)
-        {
-            FrsData* hit = (FrsData*)fHitFrs->At(ihit);
-            if (!hit)
-                continue;
-
-            fh1_TdcRaw->Fill(hit->GetTdcData());
-            fh1_TdcChan->Fill(hit->GetChan());
-
-            /*fh2_ZvsAoQ->Fill(hit->GetAoQ(), hit->GetZ());
-            fh2_x4vsAoQ->Fill(hit->GetAoQ(), hit->GetX4());
-            
-            AoQCorr = hit->GetAoQ() - a2AoQCorr * hit->GetA2();
-            fh2_ZvsAoQCorr->Fill(AoQCorr, hit->GetZ());
-            fh2_x4vsAoQCorr->Fill(AoQCorr, hit->GetX4());*/
-        }
-    }
 
     fNEvents += 1;
 }

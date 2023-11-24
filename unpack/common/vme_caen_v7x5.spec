@@ -37,6 +37,6 @@ VME_CAEN_V7X5_FRS() // V775 and V785 unpack the same
     {
         0_23:  event_number;
         24_26: 0b100;
-        27_31: geom;// = CHECK(geom);
+        27_31: geom; // = CHECK(geom);
     }
 }

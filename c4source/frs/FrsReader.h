@@ -1,7 +1,6 @@
 #ifndef FrsReader_H
 #define FrsReader_H
 
-#include "FrsData.h"
 #include "c4Reader.h"
 #include <Rtypes.h>
 
@@ -42,12 +41,11 @@ class FrsReader : public c4Reader
 
         Bool_t fOnline;
 
-        TClonesArray* fArray;
+        TClonesArray* fArrayFRSMainCrate;
+        TClonesArray* fArrayFRSCrate;
 
         uint64_t wr_t;
 
-        
-        std::vector<FrsUnpackFrsItem>* frsArray;
 
     public:
         ClassDefOverride(FrsReader, 0);

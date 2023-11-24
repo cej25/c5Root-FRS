@@ -19,7 +19,11 @@
 #pragma link C++ class TimeMachineData+;
 
 
-#pragma link C++ class FRSUnpackEventData+;
+#pragma link C++ class FRSMainCrateRawData+;
+#pragma link C++ class FRSCrateRawData+;
+#pragma link C++ class FRSSCICalData+;
+#pragma link C++ class FRSMUSICCalData+;
+
 
 
 #pragma link C++ class AidaUnpackAdcItem+;
